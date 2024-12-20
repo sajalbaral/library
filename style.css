@@ -2,4 +2,62 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+:root {
+  --backgroundColor: #fffbfb;
+  --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --grey: #f0eef1;
+}
+
+body {
+  background-color: var(--grey);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 3rem;
+  background-color: var(--backgroundColor);
+  border-bottom: 1px solid black;
+}
+
+button {
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+.button {
+  font-size: 1.2rem;
+  background-color: var(--grey);
+  padding: 15px;
+  width: 125px;
+  border-radius: 8px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #adacad;
+  transition: 0.15s ease-in-out;
+}
+
+.addBook {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.addButton {
+  font-size: 1.5rem;
+  background-color: #d7d7d7;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.book-grid-container {
+  display: grid;
 }
