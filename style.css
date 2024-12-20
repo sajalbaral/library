@@ -60,7 +60,10 @@ button:hover {
   border-radius: 8px;
 }
 
-.modal {
+#modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--backgroundColor);
   opacity: 0;
   position: fixed;
@@ -70,9 +73,6 @@ button:hover {
   bottom: 0;
   transition: all 0.3s ease-in-out;
   z-index: -1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .modal-inner {
@@ -82,7 +82,7 @@ button:hover {
   align-items: center;
   gap: 1.2rem;
   background-color: var(--grey);
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   padding: 15px 25px;
   text-align: center;
@@ -91,8 +91,8 @@ button:hover {
   font-size: 1.5rem;
 }
 
-.modal .open {
-  opacity: 1;
+#modal.open {
+  opacity: 0.8;
   z-index: 999;
 }
 
@@ -113,6 +113,11 @@ input {
 
 input::placeholder {
   font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
 }
 
 .book-grid-container {
