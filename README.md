@@ -12,6 +12,8 @@ A simple web application to manage a virtual library. You can add books, mark th
 - Simple and intuitive user interface
 - Data persists across page reloads using `localStorage`
 
+* Library data is automatically saved and restored using `localStorage`
+
 ## Built With
 
 - HTML5
@@ -25,6 +27,9 @@ A simple web application to manage a virtual library. You can add books, mark th
 - Implementing modal functionality
 - `localStorage` for persistent data
 - Clean and modular code structure
+
+* Persisting and reconstructing object state with `localStorage`
+* Refactoring rendering logic for better modularity and UI update handling
 
 ## How to Use
 

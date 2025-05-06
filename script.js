@@ -70,10 +70,8 @@ function renderLibrary() {
     });
 
     const removeButton = document.createElement("button");
-    removeButton.classList.add("button");
     removeButton.innerText = "Remove";
-    removeButton.classList.add("buttonRemove");
-    removeButton.classList.add("button");
+    removeButton.classList.add("buttonRemove", "button");
     removeButton.addEventListener("click", () => {
       myLibrary.splice(index, 1);
       updateLocalStorage();
